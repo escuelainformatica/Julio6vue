@@ -13,16 +13,18 @@
         <div class="modal-body">
           <slot name="body">
             <!-- cuerpo -->
-           AQUI ESTA EL CUERPO DEL MENSAJE MODAL 2
+           AQUI ESTA EL CUERPO DEL MENSAJE MODAL 2 title:{{propiedad.title}} id:{{propiedad.id}}
             <!-- fin del cuerpo-->
           </slot>
         </div>
 
         <div class="modal-footer">
           <slot name="footer">
-            default footer
-            <button class="modal-default-button" @click="$emit('close')">
+            <button class="modal-default-button" @click="$emit('close2')">
               OK
+            </button>&nbsp;&nbsp;&nbsp;
+            <button class="modal-default-button" @click="$emit('close3')">
+              Cancelar
             </button>
           </slot>
         </div>
@@ -34,6 +36,7 @@
 
 <script>
 module.exports = {
+  props:['propiedad'],
   data: function() {
     return {
       showModal2:false,

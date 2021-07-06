@@ -3,7 +3,7 @@
 
 <!DOCTYPE html>
 <html>
-<head>
+<>
     <title>Modal Component</title>
     <!-- produccion -->
     <!-- <script src="https://unpkg.com/vue"></script>-->
@@ -13,6 +13,12 @@
     <script src="https://cdn.jsdelivr.net/npm/http-vue-loader@1.4.2/src/httpVueLoader.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
+
+
+
     <!-- template for the modal component -->
 
 </head>
@@ -29,7 +35,6 @@
         <h3 slot="header">custom header</h3>
     </modal>
 </div>
-
 <script>
     // start app
     new Vue({
