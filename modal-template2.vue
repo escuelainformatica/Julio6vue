@@ -6,14 +6,14 @@
 
         <div class="modal-header">
           <slot name="header">
-            default header
+            default header modal 2
           </slot>
         </div>
 
         <div class="modal-body">
           <slot name="body">
             <!-- cuerpo -->
-           AQUI ESTA EL CUERPO DEL MENSAJE
+           AQUI ESTA EL CUERPO DEL MENSAJE MODAL 2
             <!-- fin del cuerpo-->
           </slot>
         </div>
