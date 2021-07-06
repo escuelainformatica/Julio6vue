@@ -35,7 +35,8 @@
     new Vue({
         el: "#app",
         components: {
-            'modal': httpVueLoader('modal-template.vue')
+            'modal': httpVueLoader('modal-template.vue'),
+            "modal-template2":httpVueLoader('modal-template2.vue')
         },
         data: {
             showModal: false

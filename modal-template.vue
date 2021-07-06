@@ -14,6 +14,11 @@
           <slot name="body">
             <!-- cuerpo -->
            AQUI ESTA EL CUERPO DEL MENSAJE
+
+            <button id="show-modal" @click="showModal = true">Show Modal 2</button>
+            <!-- use the modal component, pass in the prop -->
+            <modal-template2 v-if="showModal" @close="showModal = false" />
+
             <!-- fin del cuerpo-->
           </slot>
         </div>
@@ -34,9 +39,12 @@
 
 <script>
 module.exports = {
+  components:{
+    'modal-template2':httpVueLoader('modal-template2.vue'),
+  },
   data: function() {
     return {
-      showModal2:false,
+      showModal:false,
       who: 'world'
     }
   }
